@@ -1,0 +1,87 @@
+1.
+
+
+% Score Per Student = 
+DIVIDE(
+    SUM('Scores - Scores csv'[Score]),
+    SUM('Scores - Scores csv'[MaxScore])
+) * 100
+
+
+2.
+
+absent count = CALCULATE([Total Attendance],'Attendance - Attendance csv'[Status] = "Absent")
+
+3.
+
+Attendance % = DIVIDE([Present count],[Total Attendance],0) * 100
+
+4.
+
+avarage score per subject = DIVIDE([Total Score],DISTINCTCOUNT('Scores - Scores csv'[Subject]))
+
+5.
+
+Average Attendance % = 
+AVERAGEX (
+    VALUES ( 'Attendance - Attendance csv'[StudentID] ),
+    [Attendance %]
+) 
+
+6.
+
+Avg Score % = 
+AVERAGEX (
+    VALUES('Scores - Scores csv'[StudentID]),
+    [% Score Per Student]
+)
+
+7.
+
+Behaviour count per type = COUNTROWS('Behavior - Behavior csv')
+
+8.
+
+High Performers = 
+CALCULATE (
+    DISTINCTCOUNT('Scores - Scores csv'[StudentID]),
+    FILTER (
+        VALUES('Scores - Scores csv'[StudentID]),
+        [% Score Per Student] >= 50
+    )
+)
+
+
+9.
+
+Performance Category = 
+SWITCH(
+    TRUE(),
+    [% Score] >= 80, "High",
+    [% Score] >= 50, "Medium",
+    "Low"
+)
+
+10.
+
+Present count = CALCULATE([Total Attendance],'Attendance - Attendance csv'[Status] = "Present")
+
+11.
+
+Total Attendance = 
+COUNTROWS('Attendance - Attendance csv')
+
+12.
+
+Total Maxscore = SUM('Scores - Scores csv'[MaxScore])
+
+13.
+
+Total Score = SUM('Scores - Scores csv'[Score])
+
+14.
+Total Student = COUNT('Students - Students csv'[StudentID])
+
+15.
+
+% Score = DIVIDE(SUM('Scores - Scores csv'[Score]),SUM('Scores - Scores csv'[MaxScore])) * 100 
