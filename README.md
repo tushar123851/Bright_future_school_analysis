@@ -1,7 +1,7 @@
 #  🎓 Bright Future School Analytics Dashboard  
 
 <p align="center">
-  <img src="school.png" width="400">
+  <img src="Images/school.png" width="400">
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@ The dashboard provides **data-driven insights for schools** to improve student o
 
 ## 📊 Academic Performance Analysis
 
-![Academic](acedamic_performance.png)
+![Academic](Images/acedamic_performance.png)
 
 🔍 **Description:**
 - Displays subject-wise performance and overall scoring trends  
@@ -49,7 +49,7 @@ The dashboard provides **data-driven insights for schools** to improve student o
 
 ## 📅 Attendance Performance
 
-![Attendance](attendance_performance.png)
+![Attendance](Images/attendance_performance.png)
 
 🔍 **Description:**
 - Tracks attendance trends over time  
@@ -66,7 +66,7 @@ The dashboard provides **data-driven insights for schools** to improve student o
 
 ## 👥 Student Overview
 
-![Overview](overall_performanace.png)
+![Overview](Images/overall_performanace.png)
 
 🔍 **Description:**
 - Provides overall student distribution and demographics  
@@ -83,7 +83,7 @@ The dashboard provides **data-driven insights for schools** to improve student o
 
 ## 📘 Detailed Student Performance
 
-![Student](student_performance.png)
+![Student](Images/student_performance.png)
 
 🔍 **Description:**
 - Individual student-level insights  
