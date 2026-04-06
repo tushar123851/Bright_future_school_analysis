@@ -13,6 +13,11 @@
 
 ---
 
+<p align="center">
+  <img src="Images/student_dashboard.gif" width="85%">
+</p>
+
+
 # 📌 Project Overview
 
 📊 This project is a **Student Performance & Attendance Analytics Dashboard** designed to analyze:
